@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Huiswerk les 25</title>
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+      });
+    });
+    $(document).ready(function(){
+			// code les 25...
+			alert("Welkom op de site les 25/2025");
+		});
+    $(document).ready(function(){
+    $("div").click(function(){
+        var color = $(this).css("background-color");
+        $("#result").html(color);
+    });
+    });
+    </script>
+    <style>
+    body{
+     background-image: url("space.jpg");
+     background-size: cover;
+    }
+    header{
+    background-color: black;
+    color: white;
+    height: 14px;
+    font-size: 22px;
+    text-align: left;
+    border: solid 1px black;
+  }
+  iframe{
+    width: 100%;
+    height: 180px;
+    border: none;
+  }
+    #kleur{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 10%;
+    background-color:orange;
+    color:white;
+    border-radius: 12px;
+}
+    #kleur2{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 10%;
+    background-color:#ee82ee;;
+    color:white;
+    border-radius: 12px;
+}
+    #kleur3{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 10%;
+    background-color:rgb(139,205,50);
+    color:white;
+    border-radius: 12px;
+}
+    #kleur4{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 10%;
+    background-color:#ff0000;
+    color:white;
+    border-radius: 12px;
+}
+
+  P{
+    color:black;
+}
+  .rgb{
+    color:white;
+    margin-left: 205px;
+}
+  footer{
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    color:lightblue;
+    text-align: center;
+    margin-top: 6%;
+}
+  ul{
+    color: white;
+    width: 7%;
+    height: 110px;
+    font-size: 14px;
+    border-radius: 7px;
+    padding-top: 27px;
+}
+li{
+  list-style: url("min.png"); 
+}
+  li:hover{
+    color: #0000FF ;
+    list-style: url("plus.png");
+}
+  a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+a:hover{
+  color: white ;  
+
+    }
+#panel {
+  padding: 50px;
+  display: none;
+  font-size: 22px;
+  margin-left: 74%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  position: fixed;
+  border: solid 1px black;
+}
+#flip{
+  padding: 5px;
+  text-align: center;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: solid 1px black;
+  cursor: cell;
+}
+#flip:hover{
+  padding: 5px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  text-decoration: underline 3px;
+  text-decoration-color: aqua;
+  cursor: cell;
+}
+button{
+  width: 100px;
+  height: 54px;
+  border-radius: 7px;
+  background-color: #ff0000;
+}
+button:active{
+  width: 100px;
+  height: 54px;
+  border-radius: 7px;
+  background-color: lightgreen;
+  transform: translateY(4px);
+  box-shadow:-7px -7px 7px white;
+}
+button:focus{
+  width: 100px;
+  height: 54px;
+  border-radius: 7px;
+  background-color: lightgreen;
+}
+button:visited{
+  width: 100px;
+  height: 54px;
+  border-radius: 7px;
+  background-color: #ff0000;
+}
+
+
+</style>
+</head>
+<body>
+    <header>
+<h6>Huiswerk les 25</h6>
+    </header>
+    <div id="flip"><button><h2>+CLICK-</h2></button></div>
+    <div id="panel">Welkom op de pagina!<br><br>Huiswerk les 25<br>JavaScript & jQuery<br><br><img src="w3jquery.gif" alt="fotojquery"><br><img src="icons.png" alt="fotoiconsscript"  height="120" width="230"> <br></div>
+  
+    <nav>
+      <ul>
+        <li><a href="https://www.nha.nl/?gclid=CjwKCAjwh4ObBhAzEiwAHzZYU2-3-1SIllH0IjcRbdJVypu9FstCdAZKqYvgLb923ODSFB-jqBgLyxoCHaMQAvD_BwE"><h1>NHA</h1></a>
+        <li><a href="https://github.com/"><h1>Github</h1></a></li>
+        <li><a href="https://formspree.io/"><h1>Formspree</h1></a></li>
+      </ul>
+</nav>
+<main>
+<iframe> </iframe>
+<aside>Hallo</aside>
+</main>
+<br>
+<div id="kleur"></div>
+<div id="kleur2"></div>
+<div id="kleur3"></div>
+<div id="kleur4"></div>
+<p class="rgb">De eigenschapswaarde van de achtergrondkleuren van deze DIV-elementen is (click op het element):<b id="result"></b></p>
+<br>
+<footer>©M. Uiterwijk 2025</footer>
+</body>
+</html>
